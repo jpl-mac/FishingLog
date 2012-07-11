@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">DfD5EaY7bZQRmpHk2A1VtiNOt4gJencE</property>
+    <property name="acs-oauth-key-production" type="string">9dgy1eA2fdqwhmNfiRV0HoFfRkaqvr7j</property>
+    <property name="acs-api-key-production" type="string">uG776EJkJLt4DvK9O29WRlW4aiDN6uHd</property>
+    <property name="acs-oauth-secret-development" type="string">m7abyyo9qYMgYU2OrK0RBzvXWJMzObkl</property>
+    <property name="acs-oauth-key-development" type="string">Gmu5glnxhnYgKMLTKDkdzwJqcYx6aM4N</property>
+    <property name="acs-api-key-development" type="string">EgfLSz3abbFDtRtRhFwVj2HaWipVTsp9</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.0.2.GA</sdk-version>
+    <id>com.macadamian.fishinglog</id>
+    <name>FishingLog</name>
+    <version>1.0</version>
+    <publisher>jpl</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2012 by jpl</copyright>
+    <icon>largemouth_bass-600.jpg</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>a5f5a25b-c050-48ee-9bc5-d839810ff575</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.0.5">ti.cloud</module>
+    </modules>
+</ti:app>

@@ -11,14 +11,27 @@ var mountainView = Titanium.Map.createAnnotation({
     myid:1 // Custom property to uniquely identify this annotation.
 });
 
+var lacPhilippeBass = Titanium.Map.createAnnotation({
+    latitude:45.605910,
+    longitude:-75.999010,
+    title:"Lac Philippe Bass",
+    subtitle:'Parc de la gatineau, QC',
+    image: '../../images/largemouth_bass-small.png',
+    pincolor:Titanium.Map.ANNOTATION_GREEN,
+    animate:true,
+    leftButton: '../../images/lacPhilippeBass.jpeg',
+    myid:2 // Custom property to uniquely identify this annotation.
+});
+
+
 var mapview = Titanium.Map.createView({
-    mapType: Titanium.Map.STANDARD_TYPE,
-    region: {latitude:33.74511, longitude:-84.38993, 
+    mapType: Titanium.Map.SATELLITE_TYPE,
+    region: {latitude:lacPhilippeBass.latitude, longitude:lacPhilippeBass.longitude, 
             latitudeDelta:0.01, longitudeDelta:0.01},
     animate:true,
     regionFit:true,
     userLocation:true,
-    annotations:[mountainView]
+    annotations:[mountainView, lacPhilippeBass]
 });
 
 //win.add(mapview);

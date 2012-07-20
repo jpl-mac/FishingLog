@@ -21,7 +21,7 @@
     <url>http://</url>
     <description>not specified</description>
     <copyright>2012 by jpl</copyright>
-    <icon>largemouth_bass-600.jpg</icon>
+    <icon>images/largemouth_bass-600.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
